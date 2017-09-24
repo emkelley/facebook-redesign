@@ -1,7 +1,5 @@
 @import '_var';
-@import url( 'https://fonts.googleapis.com/css?family=Roboto:300,400');
-
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 // DELETE AFTER DEV
 $black: black;
 $white: white;
@@ -14,7 +12,6 @@ $blue: #0681FF;
 $blueDark: #0472E3;
 $greenActive: #00FFB0;
 //----------------- 
-
 * {
   box-sizing: border-box;
 }
@@ -22,7 +19,7 @@ $greenActive: #00FFB0;
 html {
   font-family: 'Roboto', sans-serif;
   background: $bg;
-} 
+}
 
 .app {
   width: 100%;
@@ -32,7 +29,7 @@ html {
 
 #left {
   float: left;
-  background-color: $white;
+  background-color: white;
   width: 220px;
   height: 100vh;
   border-right: 2px solid $greyLight;
@@ -43,24 +40,37 @@ html {
     height: 35px;
     margin-left: 10px;
     margin-top: 5px;
+    font-weight: 100;
     & img {
       line-height: 30px;
+      border-radius: 3px;
     }
   }
   & #heading {
     color: $greyDark;
     font-weight: 600;
     text-transform: uppercase;
-    margin-top: 20px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
   }
   & #child {
     color: $textDark;
     margin-left: 25px;
     line-height: 30px;
-    & img {
-      position: relative;
-      top: 4px;
+    & span {
       margin-right: 5px;
+      & img {
+        position: relative;
+        top: 4px;
+      }
+      & i {
+        top: 0px;
+        height: 20px;
+        width: 20px;
+        text-align: center;
+        color: $textDark;
+      }
     }
   }
 }
@@ -69,13 +79,14 @@ html {
   height: 75px;
   background-color: $greyLight;
 }
+
 #middle {
   width: 70%;
   display: inline-block;
-  margin:0 auto;
+  margin: 0 auto;
 }
-#right {
 
+#right {
   float: right;
   width: 205px;
   height: 100vh;
