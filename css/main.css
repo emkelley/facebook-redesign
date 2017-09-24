@@ -1,77 +1,91 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:300,400");
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   background: #DFEFFC;
 }
 
-.app {
+#app {
   width: 100%;
   height: 100vh;
   background-color: white;
 }
 
-#left {
+#left, #menu {
   float: left;
   background-color: white;
   width: 220px;
   height: 100vh;
-  border-right: 2px solid #F2F2F2;
+  border-right: 2px solid #ededed;
 }
 
-#left a {
+#left a, #menu a {
   display: block;
   text-decoration: none;
-  color: #2A2A2A;
+  color: #616161;
   height: 35px;
   margin-left: 10px;
   margin-top: 5px;
-  font-weight: 100;
+  font-weight: 400;
 }
 
-#left a img {
-  line-height: 30px;
-  border-radius: 3px;
+#user {
+  height: 75px;
+  background-color: #616161;
 }
 
-#left #heading {
+#menu #heading {
   color: #212121;
   font-weight: 600;
   text-transform: uppercase;
   padding-top: 20px;
   margin-bottom: 10px;
-  letter-spacing: 1px;
 }
 
-#left #child {
-  color: #2A2A2A;
+#menu #child {
   margin-left: 25px;
   line-height: 30px;
 }
 
-#left #child span {
+#menu #child span {
   margin-right: 5px;
 }
 
-#left #child span img {
+#menu #child span img {
   position: relative;
   top: 4px;
+  border-radius: 3px;
 }
 
-#left #child span i {
-  top: 0px;
+#menu #child span .fa {
+  position: relative;
+  top: 1px;
   height: 20px;
   width: 20px;
   text-align: center;
-  color: #2A2A2A;
+  color: #616161;
+  font-size: 1.2rem;
 }
 
-#user {
-  height: 75px;
-  background-color: #F2F2F2;
+.bday-container {
+  position: absolute;
+  padding-left: 15px;
+  line-height: 30px;
+  display: inline;
+}
+
+#bday-icon {
+  margin: auto;
+}
+
+#bday-icon img {
+  margin: auto;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-left: -15px;
 }
 
 #middle {
