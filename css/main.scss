@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,200,300,400');
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
   font-family: 'Source Sans Pro', sans-serif;
-  background: $bg;
 }
 
 #app {
@@ -198,8 +199,47 @@ html {
 }
 
 #right {
+  position: relative;
   float: right;
   width: 275px;
   height: 100vh;
   background-color: $blue;
+  padding-bottom: 200px;
+  margin: 0 auto;
 }
+
+
+.search-wrapper {
+  position: absolute;
+  bottom: 0;
+  min-height: 60px;
+  width: 275px;
+  background-color: $blue;
+  font-weight: 200;
+
+}
+#search { 
+  margin-top: 9px;
+background: $blueDark;
+border-radius: 20px;
+margin-left: 10%;
+justify-content: center;
+width: 80%;
+text-align: center;
+input {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  outline: 0;
+  height: 35px;
+  font-size: .9rem;
+  color: #fff ;
+  &::placeholder {
+    color: rgba(255,255,255, .7);
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin-left: -20px;
+    font-size: .9rem;
+  }
+}}

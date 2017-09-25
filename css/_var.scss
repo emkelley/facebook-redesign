@@ -9,10 +9,15 @@ $greyText: #616161;
 $greyDark: #212121;
 $blueLight: #31ADFF;
 $blue: #0681FF;
-$blueDark: #0472E3;
+$blueDark: darken(desaturate($blue, 10), 5);
 $greenActive: #00FFB0;
-
-
+$color-dark: black;
+$color: #974fe4;
+$font-size: 30px;
+$icon-size: 30px;
+$width-input: 500px;
+$border-radius: 10px;
+$transition: all 0.5s;
 // MIXINS //
 
 @mixin horizontal-gradient($from, $to, $stop: 100%) {
