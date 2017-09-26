@@ -56,7 +56,7 @@ html {
 }
 
 .messenger-header {
-  height: 45px;
+  height: 5%;
   padding-top: 4px;
   padding-left: 15px;
   line-height: 35px;
@@ -69,7 +69,7 @@ html {
   background: -ms-linear-gradient(left, #0681FF 0%, #31ADFF 100%);
   background: linear-gradient(to right, #0681FF 0%, #31ADFF 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to', GradientType=1);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(12, 8, 8, 0.24);
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1), 0 1px 30px rgba(12, 8, 8, 0.12);
 }
 
 .messenger-header span {
@@ -218,23 +218,30 @@ html {
   position: relative;
   float: right;
   width: 275px;
-  height: 100vh;
+  height: 100%;
   background-color: #0681FF;
-  padding-bottom: 200px;
   margin: 0 auto;
+}
+
+#users {
+  overflow: scroll;
+  height: 95%;
+  padding-top: -45px;
+  margin-bottom: -60px !important;
 }
 
 .search-wrapper {
   position: absolute;
   bottom: 0;
-  min-height: 60px;
+  min-height: 5%;
   width: 275px;
   background-color: #0681FF;
   font-weight: 200;
+  box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.1), 0 -1px 30px rgba(12, 8, 8, 0.12);
 }
 
 #search {
-  margin-top: 9px;
+  margin-top: 7px;
   background: #0c74e0;
   border-radius: 20px;
   margin-left: 10%;
@@ -250,14 +257,15 @@ html {
   color: inherit;
   outline: 0;
   height: 35px;
+  width: 100%;
   font-size: .9rem;
   color: #fff;
 }
 
 #search input::placeholder {
   color: rgba(255, 255, 255, 0.7);
-  font-weight: 200;
+  font-weight: 100;
   letter-spacing: 1px;
-  margin-left: -20px;
+  padding-left: 10px;
   font-size: .9rem;
 }
