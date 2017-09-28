@@ -137,60 +137,42 @@ html {
 .middle-header {
   z-index: -9;
   height: 5%;
-  padding-top: 4px;
-  padding-left: 15px;
+  width: 100%;
+  padding-top: .45%;
+  padding-left: 23%;
   line-height: 35px;
   font-size: 1rem;
   @include box-shadow-down(1);
-  span {
-    color: grey;
-    vertical-align: middle;
-    margin-left: 15px;
-    font-weight: 300;
-  }
-  img {
-    vertical-align: middle;
-  }
-  .fa {
-    color: $blue;
-    font-size: 1rem;
-    margin-top: 3px;
-    margin-left: 130px;
-    line-height: 35px;
-    vertical-align: middle;
-  }
 }
 
-#searchbar-primary { 
-margin-top: 8px;
-background: lighten( $greyText, 55%);
-border-radius: 3px;
-margin-left: 25%;
-justify-content: center;
-height: 25px;
-width: 50%;
-text-align: center;
-input {
-  appearance: none;
-  background: transparent;
-  border: 0;
-  color: inherit;
-  outline: 0;
-  height: 25px;
-  width: 100%;
-  font-size: .9rem;
-  color: $textDark ;
-  &::placeholder {
-    color: $textDark;
-    font-weight: 100;
-    margin-top: -15px;
-    letter-spacing: 1px;
+.search-primary { 
+  font-family: 'Source Sans Pro', FontAwesome sans-serif;
+  background: lighten( $greyText, 55%);
+  border-radius: 3px;
+  width: 20%;
+  margin-left: 100px;
+  display: table-cell;
+  input {
+    height: 35px;
+    appearance: none;
+    background: transparent;
+    border: 0;
+    color: inherit;
+    width: 100%;
+    font-size: 1rem;
+    color: $textDark ;
+    margin-bottom: 0px;
     padding-left: 10px;
-    font-size: .9rem;
-    line-height: 25px;
+    &::placeholder {
+      font-size: 1.1rem;
+      appearance: none;
+      line-height: 35px;
+      padding-left: 10px;
+      height:100%;
+      font-weight: 300;
+      }
     }
   }
-}
 
 
 
@@ -232,11 +214,11 @@ input {
     vertical-align: middle;
   }
   .fa {
+    float: right;
     color: $blue;
-    font-size: 1rem;
-    margin-top: 3px;
-    margin-left: 130px;
-    line-height: 35px;
+    margin-top: 12px;
+    margin-right: 5%;
+    font-size: .9rem;
     vertical-align: middle;
   }
 }
@@ -296,6 +278,7 @@ input {
     float: right;
     color: $white;
     margin-top: 12px;
+    margin-right: 3%;
     font-size: .9rem;
     vertical-align: middle;
   }

@@ -126,64 +126,43 @@ html {
 .middle-header {
   z-index: -9;
   height: 5%;
-  padding-top: 4px;
-  padding-left: 15px;
+  width: 100%;
+  padding-top: .45%;
+  padding-left: 23%;
   line-height: 35px;
   font-size: 1rem;
   box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1), 0 1px 30px rgba(12, 8, 8, 0.12);
 }
 
-.middle-header span {
-  color: grey;
-  vertical-align: middle;
-  margin-left: 15px;
-  font-weight: 300;
-}
-
-.middle-header img {
-  vertical-align: middle;
-}
-
-.middle-header .fa {
-  color: #0681FF;
-  font-size: 1rem;
-  margin-top: 3px;
-  margin-left: 130px;
-  line-height: 35px;
-  vertical-align: middle;
-}
-
-#searchbar-primary {
-  margin-top: 8px;
+.search-primary {
+  font-family: 'Source Sans Pro', FontAwesome sans-serif;
   background: #ededed;
   border-radius: 3px;
-  margin-left: 25%;
-  justify-content: center;
-  height: 25px;
-  width: 50%;
-  text-align: center;
+  width: 20%;
+  margin-left: 100px;
+  display: table-cell;
 }
 
-#searchbar-primary input {
+.search-primary input {
+  height: 35px;
   appearance: none;
   background: transparent;
   border: 0;
   color: inherit;
-  outline: 0;
-  height: 25px;
   width: 100%;
-  font-size: .9rem;
+  font-size: 1rem;
   color: #212124;
+  margin-bottom: 0px;
+  padding-left: 10px;
 }
 
-#searchbar-primary input::placeholder {
-  color: #212124;
-  font-weight: 100;
-  margin-top: -15px;
-  letter-spacing: 1px;
+.search-primary input::placeholder {
+  font-size: 1.1rem;
+  appearance: none;
+  line-height: 35px;
   padding-left: 10px;
-  font-size: .9rem;
-  line-height: 25px;
+  height: 100%;
+  font-weight: 300;
 }
 
 #right {
@@ -224,11 +203,11 @@ html {
 }
 
 .messenger-header .fa {
+  float: right;
   color: #0681FF;
-  font-size: 1rem;
-  margin-top: 3px;
-  margin-left: 130px;
-  line-height: 35px;
+  margin-top: 12px;
+  margin-right: 5%;
+  font-size: .9rem;
   vertical-align: middle;
 }
 
@@ -290,6 +269,7 @@ html {
   float: right;
   color: white;
   margin-top: 12px;
+  margin-right: 3%;
   font-size: .9rem;
   vertical-align: middle;
 }
