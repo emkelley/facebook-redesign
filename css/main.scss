@@ -1,5 +1,18 @@
+
+
+/*
+
+@TODO
+
+-add min and max width on sidebars
+-unfuck the searchbar
+
+
+
+*/
 @import '_var';
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,200,300,400');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,17 +20,13 @@
 }
 
 html {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: $fontStack;
 }
 
 #app {
   width: 100%;
   height: 100vh;
 }
-
-
-
-
 
 // BEGIN LEFT SIDEBAR //
 
@@ -58,7 +67,6 @@ html {
     vertical-align: middle;
   }
 }
-
 
 #menu {
   a {
@@ -139,46 +147,122 @@ html {
   height: 5%;
   width: 100%;
   padding-top: .45%;
-  padding-left: 23%;
   line-height: 35px;
   font-size: 1rem;
   @include box-shadow-down(1);
 }
 
-.search-primary { 
-  font-family: 'Source Sans Pro', FontAwesome sans-serif;
-  background: lighten( $greyText, 55%);
-  border-radius: 3px;
-  width: 20%;
-  margin-left: 100px;
-  display: table-cell;
-  input {
-    height: 35px;
-    appearance: none;
-    background: transparent;
-    border: 0;
-    color: inherit;
-    width: 100%;
-    font-size: 1rem;
-    color: $textDark ;
-    margin-bottom: 0px;
-    padding-left: 10px;
-    &::placeholder {
-      font-size: 1.1rem;
-      appearance: none;
-      line-height: 35px;
-      padding-left: 10px;
-      height:100%;
-      font-weight: 300;
-      }
-    }
+.searchbar {
+  position: relative;
+  margin: 0 auto;
+  height: 60px;
+  width: 60%;
+}
+
+.searchbar--input,
+.searchbar--buttons {
+  @include tablet {
+    position: absolute;
   }
+  top: 0;
+  right: 0;
+}
 
+.searchbar--input,
+.searchbar--select,
+.searchbar--submit {
+  border: none;
+  outline: none;
+}
 
+.searchbar--input {
+  width: 100%;
+  padding: 20px 0 20px 0px;
+  padding-left: 10px;
+  height: 60px;
+  background-color: $blue;
+  border-radius: 3px;
+  font-weight: 100;
+  @include tablet {
+    height: 40px;
+  }
+  font-size: 16px;
+}
 
+.searchbar--submit,
+.searchbar--select {
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  font-weight: 100;
+}
 
+.searchbar--submit {
+  //position: absolute;
+  //right: 0;
+  //top: 0;
+  @include small {
+    width: 36%;
+  }
+  width: 80px;
+  height: 50px;
+  @include tablet {
+    height: 30px;
+  }
+  padding: 0;
+  margin: 5px;
+  line-height: 32px;
+  display: block;
+  float: right;
+  font-size: 14px;
+  letter-spacing: .5px;
+  border-radius: 4px;
+  color: #212121;
+  background-color: lighten( $greyText, 55%);
+}
 
+.searchbar--select {
+  //position: absolute;
+  //right: 0;
+  @include small {
+    width: 100%;
+  }
+  height: 50px;
+  @include tablet {
+    height: 30px;
+  }
+  margin: 5px 0;
+  padding: 0 40px 0 20px;
+  border-radius: 3;
+  color: #8a8a8a;
+  letter-spacing: .25px;
+  background-color: lighten( $greyText, 55%);
+}
 
+.select-wrapper {
+  position: relative;
+  float: right;
+  @include small {
+    width: 60%;
+  }
+  &:after {
+    content: '>';
+    font: 18px 'Source Sans Pro', monospace;
+    color: #b3b1b1;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 20px;
+    top: 19px;
+    @media (min-width: 768px) {
+      top: 10px;
+    }
+    padding: 0 0 2px;
+    position: absolute;
+    pointer-events: none;
+  }
+}
 // END MIDDLE //
 
 

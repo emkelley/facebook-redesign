@@ -6,6 +6,7 @@ $white: white;
 $textDark: #212124;
 $bg: #DFEFFC;
 $greyText: #616161;
+$greyUI: lighten( $greyText, 55%);
 $greyDark: #212121;
 $blueLight: #31ADFF;
 $blue: #0681FF;
@@ -13,6 +14,8 @@ $blueDark: darken(desaturate($blue, 10), 5);
 $greenActive: #00FFB0;
 $color-dark: black;
 $color: #974fe4;
+
+$fontStack: 'Source Sans Pro', sans-serif;
 $font-size: 30px;
 $icon-size: 30px;
 $width-input: 500px;
@@ -46,4 +49,22 @@ $transition: all 0.5s;
     @else if $level==2 {
         box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.16), 0 -3px 6px rgba(0, 0, 0, 0.23);
         }
+}
+
+@mixin small {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1100px) {
+    @content;
+  }
 }

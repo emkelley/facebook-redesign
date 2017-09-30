@@ -1,3 +1,13 @@
+/*
+
+@TODO
+
+-add min and max width on sidebars
+-unfuck the searchbar
+
+
+
+*/
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,200,300,400");
 * {
   box-sizing: border-box;
@@ -6,7 +16,7 @@
 }
 
 html {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 #app {
@@ -128,41 +138,142 @@ html {
   height: 5%;
   width: 100%;
   padding-top: .45%;
-  padding-left: 23%;
   line-height: 35px;
   font-size: 1rem;
   box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1), 0 1px 30px rgba(12, 8, 8, 0.12);
 }
 
-.search-primary {
-  font-family: 'Source Sans Pro', FontAwesome sans-serif;
-  background: #ededed;
-  border-radius: 3px;
-  width: 20%;
-  margin-left: 100px;
-  display: table-cell;
+.searchbar {
+  position: relative;
+  margin: 0 auto;
+  height: 60px;
+  width: 60%;
 }
 
-.search-primary input {
-  height: 35px;
-  appearance: none;
-  background: transparent;
-  border: 0;
-  color: inherit;
+.searchbar--input,
+.searchbar--buttons {
+  top: 0;
+  right: 0;
+}
+
+@media (min-width: 768px) {
+  .searchbar--input,
+  .searchbar--buttons {
+    position: absolute;
+  }
+}
+
+.searchbar--input,
+.searchbar--select,
+.searchbar--submit {
+  border: none;
+  outline: none;
+}
+
+.searchbar--input {
   width: 100%;
-  font-size: 1rem;
-  color: #212124;
-  margin-bottom: 0px;
+  padding: 20px 0 20px 0px;
   padding-left: 10px;
+  height: 60px;
+  background-color: #0681FF;
+  border-radius: 3px;
+  font-weight: 100;
+  font-size: 16px;
 }
 
-.search-primary input::placeholder {
-  font-size: 1.1rem;
+@media (min-width: 768px) {
+  .searchbar--input {
+    height: 40px;
+  }
+}
+
+.searchbar--submit,
+.searchbar--select {
+  cursor: pointer;
+  -webkit-appearance: none;
   appearance: none;
-  line-height: 35px;
-  padding-left: 10px;
-  height: 100%;
-  font-weight: 300;
+  font-weight: 100;
+}
+
+.searchbar--submit {
+  width: 80px;
+  height: 50px;
+  padding: 0;
+  margin: 5px;
+  line-height: 32px;
+  display: block;
+  float: right;
+  font-size: 14px;
+  letter-spacing: .5px;
+  border-radius: 4px;
+  color: #212121;
+  background-color: #ededed;
+}
+
+@media (max-width: 767px) {
+  .searchbar--submit {
+    width: 36%;
+  }
+}
+
+@media (min-width: 768px) {
+  .searchbar--submit {
+    height: 30px;
+  }
+}
+
+.searchbar--select {
+  height: 50px;
+  margin: 5px 0;
+  padding: 0 40px 0 20px;
+  border-radius: 3;
+  color: #8a8a8a;
+  letter-spacing: .25px;
+  background-color: #ededed;
+}
+
+@media (max-width: 767px) {
+  .searchbar--select {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .searchbar--select {
+    height: 30px;
+  }
+}
+
+.select-wrapper {
+  position: relative;
+  float: right;
+}
+
+@media (max-width: 767px) {
+  .select-wrapper {
+    width: 60%;
+  }
+}
+
+.select-wrapper:after {
+  content: '>';
+  font: 18px 'Source Sans Pro', monospace;
+  color: #b3b1b1;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  right: 20px;
+  top: 19px;
+  padding: 0 0 2px;
+  position: absolute;
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .select-wrapper:after {
+    top: 10px;
+  }
 }
 
 #right {
