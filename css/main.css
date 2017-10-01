@@ -40,7 +40,7 @@ html {
 }
 
 #user-header {
-  height: 50px;
+  height: 45px;
   background-color: white;
   width: 100%;
 }
@@ -133,16 +133,15 @@ html {
 }
 
 #middle {
-  width: 600px;
+  width: 952px;
   display: inline-block;
   margin: 0 auto;
-  background-color: white;
   height: 100%;
 }
 
 .middle-header {
   z-index: -9;
-  height: 5%;
+  height: 45px;
   width: 100%;
   padding-top: .45%;
   line-height: 35px;
@@ -153,21 +152,15 @@ html {
 .searchbar {
   position: relative;
   margin: 0 auto;
-  height: 60px;
+  height: 20px;
   width: 60%;
 }
 
-.searchbar--input,
 .searchbar--buttons {
+  width: 40px;
+  position: absolute;
   top: 0;
-  right: 0;
-}
-
-@media (min-width: 768px) {
-  .searchbar--input,
-  .searchbar--buttons {
-    position: absolute;
-  }
+  right: -5px;
 }
 
 .searchbar--input,
@@ -179,19 +172,39 @@ html {
 
 .searchbar--input {
   width: 100%;
-  padding: 20px 0 20px 0px;
-  padding-left: 10px;
-  height: 60px;
-  background-color: #0681FF;
+  margin-top: 5px;
+  padding: 5px 0 5px 10px;
   border-radius: 3px;
   font-weight: 100;
-  font-size: 16px;
+  font-size: .9rem;
+  color: #0681FF;
+  background-color: #ededed;
 }
 
-@media (min-width: 768px) {
-  .searchbar--input {
-    height: 40px;
-  }
+.searchbar--input::-webkit-input-placeholder {
+  color: #aeaeae;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+}
+
+.searchbar--input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #aeaeae;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+}
+
+.searchbar--input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #aeaeae;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+}
+
+.searchbar--input:-ms-input-placeholder {
+  color: #aeaeae;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
 }
 
 .searchbar--submit,
@@ -202,85 +215,24 @@ html {
   font-weight: 100;
 }
 
+.searchbar--submit:hover {
+  background-color: #0681FF;
+  color: white;
+}
+
 .searchbar--submit {
-  width: 80px;
-  height: 50px;
+  width: 30px;
+  height: 25px;
   padding: 0;
   margin: 5px;
-  line-height: 32px;
+  line-height: 15px;
   display: block;
   float: right;
-  font-size: 14px;
-  letter-spacing: .5px;
-  border-radius: 4px;
-  color: #212121;
+  font-size: .8rem;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  color: #949494;
   background-color: #ededed;
-}
-
-@media (max-width: 767px) {
-  .searchbar--submit {
-    width: 36%;
-  }
-}
-
-@media (min-width: 768px) {
-  .searchbar--submit {
-    height: 30px;
-  }
-}
-
-.searchbar--select {
-  height: 50px;
-  margin: 5px 0;
-  padding: 0 40px 0 20px;
-  border-radius: 3;
-  color: #8a8a8a;
-  letter-spacing: .25px;
-  background-color: #ededed;
-}
-
-@media (max-width: 767px) {
-  .searchbar--select {
-    width: 100%;
-  }
-}
-
-@media (min-width: 768px) {
-  .searchbar--select {
-    height: 30px;
-  }
-}
-
-.select-wrapper {
-  position: relative;
-  float: right;
-}
-
-@media (max-width: 767px) {
-  .select-wrapper {
-    width: 60%;
-  }
-}
-
-.select-wrapper:after {
-  content: '>';
-  font: 18px 'Source Sans Pro', monospace;
-  color: #b3b1b1;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  right: 20px;
-  top: 19px;
-  padding: 0 0 2px;
-  position: absolute;
-  pointer-events: none;
-}
-
-@media (min-width: 768px) {
-  .select-wrapper:after {
-    top: 10px;
-  }
 }
 
 #right {
@@ -306,7 +258,7 @@ html {
 }
 
 .messenger-header {
-  height: 5%;
+  height: 45px;
   padding-top: 4px;
   padding-left: 15px;
   line-height: 35px;
@@ -344,8 +296,7 @@ html {
 
 #users {
   overflow: auto;
-  height: 95%;
-  padding-top: -45px;
+  height: 90%;
   margin-bottom: -60px !important;
 }
 

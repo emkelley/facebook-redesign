@@ -47,7 +47,7 @@ html {
 }
 
 #user-header {
-  height: 50px;
+  height: 45px;
   background-color: white;
   width: 100%;
 }
@@ -142,16 +142,15 @@ html {
 // BEGIN MIDDLE //
 
 #middle {
-  width: 600px;
+  width: 952px;
   display: inline-block;
   margin: 0 auto;
-  background-color: $white;
   height: 100%;
 }
 
 .middle-header {
   z-index: -9;
-  height: 5%;
+  height: 45px;
   width: 100%;
   padding-top: .45%;
   line-height: 35px;
@@ -162,17 +161,16 @@ html {
 .searchbar {
   position: relative;
   margin: 0 auto;
-  height: 60px;
+  height: 20px;
   width: 60%;
 }
 
-.searchbar--input,
+
 .searchbar--buttons {
-  @include tablet {
-    position: absolute;
-  }
+  width: 40px;
+  position: absolute;
   top: 0;
-  right: 0;
+  right: -5px;
 }
 
 .searchbar--input,
@@ -184,17 +182,19 @@ html {
 
 .searchbar--input {
   width: 100%;
-  padding: 20px 0 20px 0px;
-  padding-left: 10px;
-  height: 60px;
-  background-color: $blue;
+  margin-top: 5px;
+  padding: 5px 0 5px 10px;
   border-radius: 3px;
   font-weight: 100;
-  @include tablet {
-    height: 40px;
+  font-size: .9rem; 
+  color: $blue;
+  background-color: $greyUI;
+  @include placeholder {
+    color: lighten($greyText, 30%);
+    font-family: $fontStack;
+    font-weight: 300;
   }
-  font-size: 16px;
-}
+} 
 
 .searchbar--submit,
 .searchbar--select {
@@ -204,72 +204,25 @@ html {
   font-weight: 100;
 }
 
+.searchbar--submit:hover {
+  background-color: $blue;
+  color: white;
+}
 .searchbar--submit {
-  //position: absolute;
-  //right: 0;
-  //top: 0;
-  @include small {
-    width: 36%;
-  }
-  width: 80px;
-  height: 50px;
-  @include tablet {
-    height: 30px;
-  }
+  width: 30px;
+  height: 25px;
   padding: 0;
   margin: 5px;
-  line-height: 32px;
+  line-height: 15px;
   display: block;
   float: right;
-  font-size: 14px;
-  letter-spacing: .5px;
-  border-radius: 4px;
-  color: #212121;
+  font-size: .8rem;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  color: lighten($greyText, 20%);
   background-color: lighten( $greyText, 55%);
 }
 
-.searchbar--select {
-  //position: absolute;
-  //right: 0;
-  @include small {
-    width: 100%;
-  }
-  height: 50px;
-  @include tablet {
-    height: 30px;
-  }
-  margin: 5px 0;
-  padding: 0 40px 0 20px;
-  border-radius: 3;
-  color: #8a8a8a;
-  letter-spacing: .25px;
-  background-color: lighten( $greyText, 55%);
-}
-
-.select-wrapper {
-  position: relative;
-  float: right;
-  @include small {
-    width: 60%;
-  }
-  &:after {
-    content: '>';
-    font: 18px 'Source Sans Pro', monospace;
-    color: #b3b1b1;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-    right: 20px;
-    top: 19px;
-    @media (min-width: 768px) {
-      top: 10px;
-    }
-    padding: 0 0 2px;
-    position: absolute;
-    pointer-events: none;
-  }
-}
 // END MIDDLE //
 
 
@@ -288,7 +241,7 @@ html {
 }
 
 .messenger-header {
-  height: 5%;
+  height: 45px;
   padding-top: 4px;
   padding-left: 15px;
   line-height: 35px;
@@ -317,8 +270,7 @@ html {
 
 #users {
   overflow: auto;
-  height: 95%;
-  padding-top: -45px;
+  height: 90%;
   margin-bottom: -60px!important;
 } 
 
