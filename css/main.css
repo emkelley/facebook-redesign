@@ -52,13 +52,13 @@ html {
   padding-left: 15px;
   line-height: 35px;
   font-size: 1rem;
+  color: #777777;
 }
 
 .logo span {
-  color: #777777;
-  vertical-align: middle;
   margin-left: 15px;
   font-weight: 300;
+  vertical-align: middle;
 }
 
 .logo img {
@@ -66,9 +66,8 @@ html {
 }
 
 .logo .fa {
-  color: #777777;
-  font-size: .8rem;
   margin-top: 3px;
+  font-size: .8rem;
   margin-left: 45px;
   vertical-align: middle;
 }
@@ -146,15 +145,13 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  z-index: -9;
   height: 45px;
-  width: 952px;
   padding-top: .45%;
   line-height: 35px;
   font-size: 1rem;
-  -webkit-box-shadow: 0 10px 20px -3px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
 .searchbar {
@@ -184,7 +181,7 @@ html {
   padding: 5px 0 5px 10px;
   border-radius: 3px;
   font-weight: 100;
-  font-size: .9rem;
+  font-size: 1rem;
   color: #0c74e0;
   background-color: #f7f7f7;
 }
@@ -265,15 +262,15 @@ html {
 
 .links-primary .number {
   position: absolute;
-  margin-top: -34px;
+  margin-top: -30px;
   margin-left: 50px;
-  background-color: #0c74e0;
+  background-color: #ff2846;
   border-radius: 3px;
-  border: 1px solid white;
+  border: 1.5px solid white;
   height: 13px;
   width: 15px;
-  line-height: 10px;
-  font-size: .7rem;
+  line-height: 8px;
+  font-size: .5rem;
   font-weight: 600;
   color: white;
   text-align: center;
@@ -315,9 +312,9 @@ html {
   background: -ms-linear-gradient(left, #0681FF 0%, #31ADFF 100%);
   background: linear-gradient(to right, #0681FF 0%, #31ADFF 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to', GradientType=1);
-  -webkit-box-shadow: 0 10px 20px -3px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
 .messenger-header span {
@@ -409,11 +406,13 @@ html {
   width: 100%;
   background-color: #0681FF;
   font-weight: 200;
-  box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.1), 0 -1px 30px rgba(12, 8, 8, 0.12);
+  -webkit-box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.1);
 }
 
 #searchbar {
-  margin-top: 7px;
+  margin-top: 10px;
   background: #0c74e0;
   border-radius: 20px;
   margin-left: 10%;
@@ -425,17 +424,17 @@ html {
 #searchbar input {
   appearance: none;
   background: transparent;
+  padding: 0px 10px 0px 10px;
   border: 0;
-  color: inherit;
   outline: 0;
-  height: 35px;
+  height: 30px;
   width: 100%;
   font-size: .9rem;
   color: #fff;
 }
 
 #searchbar input::placeholder {
-  color: rgba(255, 255, 255, 0.7);
+  color: #c4c4c4;
   font-weight: 100;
   letter-spacing: 1px;
   padding-left: 10px;

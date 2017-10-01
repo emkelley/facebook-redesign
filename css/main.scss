@@ -60,19 +60,18 @@ html {
   padding-left: 15px;
   line-height: 35px;
   font-size: 1rem;
+  color: $greyText;
   span {
-    color: $greyText;
-    vertical-align: middle;
     margin-left: 15px;
     font-weight: 300;
+    vertical-align: middle;
   }
   img {
     vertical-align: middle;
   }
   .fa { 
-    color: $greyText;
-    font-size: .8rem;
     margin-top: 3px;
+    font-size: .8rem;
     margin-left: 45px;
     vertical-align: middle;
   }
@@ -156,9 +155,7 @@ html {
   display:flex;
   flex-direction:row;
   justify-content: space-around;
-  z-index: -9;
   height: 45px;
-  width: 952px;  
   padding-top: .45%;
   line-height: 35px;
   font-size: 1rem;
@@ -190,8 +187,8 @@ html {
   margin-top: 5px;
   padding: 5px 0 5px 10px;
   border-radius: 3px;
-  font-weight: 100;
-  font-size: .9rem; 
+  font-weight: 100;  
+  font-size: 1rem; 
   color: $blueDark;
   background-color: $greyUI;
   @include placeholder {
@@ -237,7 +234,7 @@ html {
     width: 30px;
     margin-right: 5px;
     color: lighten($greyText, 30%);
-    transition: .3s;
+    transition: .3s; 
     font-size: 1.2rem;
     &:hover {
       color: $blue;
@@ -246,15 +243,15 @@ html {
   }
   & .number {
     position: absolute;
-    margin-top: -34px;
+    margin-top: -30px;
     margin-left: 50px;
-    background-color: $blueDark;
+    background-color: #ff2846;
     border-radius: 3px;
-    border: 1px solid white;
+    border: 1.5px solid white;
     height: 13px;
     width: 15px;
-    line-height: 10px;
-    font-size: .7rem;
+    line-height: 8px;
+    font-size: .5rem;
     font-weight: 600;
     color: white;
     text-align: center;
@@ -372,12 +369,11 @@ html {
   width: 100%;
   background-color: $blue;
   font-weight: 200;
-  @include box-shadow-up(1);
- 
+  @include box-shadow-up();
 }
 
 #searchbar { 
-margin-top: 7px;
+margin-top: 10px;
 background: $blueDark;
 border-radius: 20px;
 margin-left: 10%;
@@ -387,15 +383,15 @@ text-align: center;
 input {
   appearance: none;
   background: transparent;
+  padding: 0px 10px 0px 10px;
   border: 0;
-  color: inherit;
   outline: 0;
-  height: 35px;
+  height: 30px;
   width: 100%;
   font-size: .9rem;
-  color: #fff ;
+  color: #fff;
   &::placeholder {
-    color: rgba(255,255,255, .7);
+    color: lighten($greyText, 30%);
     font-weight: 100;
     letter-spacing: 1px;
     padding-left: 10px;
