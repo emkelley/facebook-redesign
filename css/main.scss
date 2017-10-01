@@ -150,10 +150,12 @@ html {
   margin: 0 auto;
   height: 100%;
   background-color: white;
-  
 }
 
 .middle-header {
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
   z-index: -9;
   height: 45px;
   width: 952px;  
@@ -167,15 +169,13 @@ html {
   position: relative;
   margin: 0 auto;
   height: 20px;
-  width: 60%;
-}
-
-
-.searchbar--buttons {
-  width: 40px;
-  position: absolute;
-  top: 0;
-  right: -5px;
+  width: 500px;
+  .searchbar--buttons {
+    width: 40px;
+    position: absolute;
+    top: 0;
+    right: -5px;
+  }
 }
 
 .searchbar--input,
@@ -192,7 +192,7 @@ html {
   border-radius: 3px;
   font-weight: 100;
   font-size: .9rem; 
-  color: $blue;
+  color: $blueDark;
   background-color: $greyUI;
   @include placeholder {
     color: lighten($greyText, 30%);
@@ -229,6 +229,37 @@ html {
   background-color: $greyUI;
 }
 
+.links-primary {
+  display: inline-block;
+  margin: 0 auto;
+  margin-left: -50px;
+  & i {
+    width: 30px;
+    margin-right: 5px;
+    color: lighten($greyText, 30%);
+    transition: .3s;
+    font-size: 1.2rem;
+    &:hover {
+      color: $blue;
+      cursor: pointer;
+    }
+  }
+  & .number {
+    position: absolute;
+    margin-top: -34px;
+    margin-left: 50px;
+    background-color: $blueDark;
+    border-radius: 3px;
+    border: 1px solid white;
+    height: 13px;
+    width: 15px;
+    line-height: 10px;
+    font-size: .7rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+  }
+}
 // END MIDDLE //
 
 

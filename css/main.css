@@ -143,6 +143,9 @@ html {
 }
 
 .middle-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   z-index: -9;
   height: 45px;
   width: 952px;
@@ -158,10 +161,10 @@ html {
   position: relative;
   margin: 0 auto;
   height: 20px;
-  width: 60%;
+  width: 500px;
 }
 
-.searchbar--buttons {
+.searchbar .searchbar--buttons {
   width: 40px;
   position: absolute;
   top: 0;
@@ -182,7 +185,7 @@ html {
   border-radius: 3px;
   font-weight: 100;
   font-size: .9rem;
-  color: #0681FF;
+  color: #0c74e0;
   background-color: #f7f7f7;
 }
 
@@ -239,6 +242,41 @@ html {
   border-bottom-right-radius: 4px;
   color: #aaaaaa;
   background-color: #f7f7f7;
+}
+
+.links-primary {
+  display: inline-block;
+  margin: 0 auto;
+  margin-left: -50px;
+}
+
+.links-primary i {
+  width: 30px;
+  margin-right: 5px;
+  color: #c4c4c4;
+  transition: .3s;
+  font-size: 1.2rem;
+}
+
+.links-primary i:hover {
+  color: #0681FF;
+  cursor: pointer;
+}
+
+.links-primary .number {
+  position: absolute;
+  margin-top: -34px;
+  margin-left: 50px;
+  background-color: #0c74e0;
+  border-radius: 3px;
+  border: 1px solid white;
+  height: 13px;
+  width: 15px;
+  line-height: 10px;
+  font-size: .7rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
 }
 
 #right {
