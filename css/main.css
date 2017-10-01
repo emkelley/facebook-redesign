@@ -36,7 +36,7 @@ html {
   background-color: white;
   width: 200px;
   height: 100%;
-  border-right: 2px solid #ededed;
+  border-right: 2px solid #f7f7f7;
 }
 
 #user-header {
@@ -53,7 +53,7 @@ html {
 }
 
 .logo span {
-  color: #616161;
+  color: #777777;
   vertical-align: middle;
   margin-left: 15px;
   font-weight: 300;
@@ -64,7 +64,7 @@ html {
 }
 
 .logo .fa {
-  color: #616161;
+  color: #777777;
   font-size: .8rem;
   margin-top: 3px;
   margin-left: 45px;
@@ -74,7 +74,7 @@ html {
 #menu a {
   display: block;
   text-decoration: none;
-  color: #616161;
+  color: #777777;
   height: 35px;
   padding-left: 15px;
   margin-top: 5px;
@@ -82,7 +82,7 @@ html {
 }
 
 #menu #heading {
-  color: #2e2e2e;
+  color: #444444;
   font-weight: 600;
   text-transform: uppercase;
   padding-top: 20px;
@@ -110,7 +110,7 @@ html {
   height: 20px;
   width: 20px;
   text-align: center;
-  color: #616161;
+  color: #777777;
   font-size: 1.2rem;
 }
 
@@ -178,31 +178,31 @@ html {
   font-weight: 100;
   font-size: .9rem;
   color: #0681FF;
-  background-color: #ededed;
+  background-color: #f7f7f7;
 }
 
 .searchbar--input::-webkit-input-placeholder {
-  color: #aeaeae;
+  color: #c4c4c4;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
 }
 
 .searchbar--input:-moz-placeholder {
   /* Firefox 18- */
-  color: #aeaeae;
+  color: #c4c4c4;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
 }
 
 .searchbar--input::-moz-placeholder {
   /* Firefox 19+ */
-  color: #aeaeae;
+  color: #c4c4c4;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
 }
 
 .searchbar--input:-ms-input-placeholder {
-  color: #aeaeae;
+  color: #c4c4c4;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
 }
@@ -231,8 +231,8 @@ html {
   font-size: .8rem;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
-  color: #949494;
-  background-color: #ededed;
+  color: #aaaaaa;
+  background-color: #f7f7f7;
 }
 
 #right {
@@ -245,8 +245,8 @@ html {
 }
 
 #right ::-webkit-scrollbar {
-  width: 0.5em;
-  height: 0.5em;
+  width: 0.2rem;
+  height: 0.2rem;
 }
 
 #right ::-webkit-scrollbar-thumb {
@@ -289,20 +289,20 @@ html {
   float: right;
   color: #0681FF;
   margin-top: 12px;
-  margin-right: 5%;
+  margin-right: 8%;
   font-size: .9rem;
   vertical-align: middle;
 }
 
 #users {
-  overflow: auto;
+  overflow-y: auto;
   height: 90%;
   margin-bottom: -60px !important;
 }
 
 .messenger-user {
   height: 45px;
-  width: 260px;
+  width: 210px;
   padding-top: 4px;
   padding-left: 15px;
   line-height: 35px;
@@ -351,7 +351,7 @@ html {
   float: right;
   color: white;
   margin-top: 12px;
-  margin-right: 3%;
+  margin-right: 5%;
   font-size: .9rem;
   vertical-align: middle;
 }
@@ -359,7 +359,7 @@ html {
 .search-wrapper {
   position: absolute;
   bottom: 0;
-  min-height: 5%;
+  height: 50px;
   width: 100%;
   background-color: #0681FF;
   font-weight: 200;
