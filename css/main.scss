@@ -21,6 +21,7 @@
 
 html {
   font-family: $fontStack;
+  background-color: $bg;
 }
 
 #app {
@@ -33,6 +34,7 @@ html {
   width: 1366px;
   height: 768px;
   border: 2px solid slategray;
+
 }
 
 // BEGIN LEFT SIDEBAR //
@@ -44,6 +46,7 @@ html {
   width: 200px;
   height: 100%;
   border-right: 2px solid $greyUI;
+  z-index: 2;
 }
 
 #user-header {
@@ -137,7 +140,7 @@ html {
 
 
 
-
+ 
 
 // BEGIN MIDDLE //
 
@@ -146,16 +149,18 @@ html {
   display: inline-block;
   margin: 0 auto;
   height: 100%;
+  background-color: white;
+  
 }
 
 .middle-header {
   z-index: -9;
   height: 45px;
-  width: 100%;
+  width: 952px;  
   padding-top: .45%;
   line-height: 35px;
   font-size: 1rem;
-  @include box-shadow-down(1);
+  @include box-shadow-down();  
 }
 
 .searchbar {
@@ -248,7 +253,7 @@ html {
   font-size: 1rem;
   @include horizontal-gradient($blue,
   $blueLight);
-  @include box-shadow-down(1);
+  @include box-shadow-down();
   span {
     color: $white;
     vertical-align: middle;

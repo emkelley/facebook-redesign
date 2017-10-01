@@ -17,6 +17,7 @@
 
 html {
   font-family: "Source Sans Pro", sans-serif;
+  background-color: #DFEFFC;
 }
 
 #app {
@@ -37,6 +38,7 @@ html {
   width: 200px;
   height: 100%;
   border-right: 2px solid #f7f7f7;
+  z-index: 2;
 }
 
 #user-header {
@@ -137,16 +139,19 @@ html {
   display: inline-block;
   margin: 0 auto;
   height: 100%;
+  background-color: white;
 }
 
 .middle-header {
   z-index: -9;
   height: 45px;
-  width: 100%;
+  width: 952px;
   padding-top: .45%;
   line-height: 35px;
   font-size: 1rem;
-  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1), 0 1px 30px rgba(12, 8, 8, 0.12);
+  -webkit-box-shadow: 0 10px 20px -3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 10px -6px rgba(0, 0, 0, 0.1);
 }
 
 .searchbar {
@@ -271,7 +276,9 @@ html {
   background: -ms-linear-gradient(left, #0681FF 0%, #31ADFF 100%);
   background: linear-gradient(to right, #0681FF 0%, #31ADFF 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to', GradientType=1);
-  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1), 0 1px 30px rgba(12, 8, 8, 0.12);
+  -webkit-box-shadow: 0 10px 20px -3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 10px -6px rgba(0, 0, 0, 0.1);
 }
 
 .messenger-header span {
