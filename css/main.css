@@ -276,6 +276,61 @@ html {
   text-align: center;
 }
 
+.text-field {
+  width: 670px;
+  height: 80px;
+  background-color: #f7f7f7;
+  border-radius: 7px;
+  margin-left: 130px;
+  margin-top: 30px;
+}
+
+.text-field img {
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-left: -10px;
+  margin-top: -8px;
+}
+
+.text-field .status {
+  position: absolute;
+  padding-left: 230px;
+  margin-top: 30px;
+  color: #c4c4c4;
+}
+
+.text-field .actions {
+  float: right;
+  margin-top: 60px;
+  margin-right: 15px;
+  color: #777777;
+  transition: .3s;
+}
+
+.text-field .actions :hover {
+  color: white;
+  background-color: #0681FF;
+}
+
+.text-field .actions i {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding-top: 12px;
+}
+
+.text-field .actions .post {
+  background-color: #0681FF;
+  padding-right: 3px;
+  color: white;
+}
+
 #right {
   position: relative;
   float: right;

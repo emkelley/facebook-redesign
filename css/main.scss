@@ -149,7 +149,7 @@ html {
   margin: 0 auto;
   height: 100%;
   background-color: white;
-}
+} 
 
 .middle-header {
   display:flex;
@@ -255,6 +255,58 @@ html {
     font-weight: 600;
     color: white;
     text-align: center;
+  }
+}
+
+#create-post {
+
+}
+
+.text-field {
+  width: 670px;
+  height: 80px;
+  background-color: $greyUI;
+  border-radius: 7px;
+  margin-left: 130px;
+  margin-top: 30px;
+  img {
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-left: -10px;
+    margin-top: -8px;
+  }
+  .status {
+    position: absolute;
+    padding-left: 230px;
+    margin-top: 30px;
+    color: lighten($greyText, 30%);
+  }
+  .actions {
+    float: right;
+    margin-top: 60px;
+    margin-right: 15px;
+    color: $greyText;
+    transition: .3s;
+    & :hover {
+      color: white;
+      background-color: $blue;
+    }
+    i {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: white;
+    @include box_shadow_around();
+    text-align: center;
+    padding-top: 12px;
+    
+    }
+    .post {
+      background-color: $blue;
+      padding-right: 3px;
+      color: white;
+    }
   }
 }
 // END MIDDLE //

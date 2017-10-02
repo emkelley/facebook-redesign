@@ -1,9 +1,13 @@
-var icon = $('.search-icon');
-var form = $('form.search');
-
-icon.click(function() {
-  form.toggleClass('open');
-  if (form.hasClass('open')) {
-    form.children('input.search').focus();
-  }
+$(document)
+.one('focus.autoExpand', 'textarea.autoExpand', function(){
+    var savedValue = this.value;
+    this.value = '';
+    this.baseScrollHeight = this.scrollHeight;
+    this.value = savedValue;
+})
+.on('input.autoExpand', 'textarea.autoExpand', function(){
+    var minRows = this.getAttribute('data-min-rows')|0, rows;
+    this.rows = minRows;
+    rows = Math.ceil((this.scrollHeight - this.baseScrollHeight) / 17);
+    this.rows = minRows + rows;
 });

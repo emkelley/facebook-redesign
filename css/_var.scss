@@ -33,7 +33,11 @@ $transition: all 0.5s;
     background: linear-gradient(to right, $from 0%, $to $stop);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to', GradientType=1);
 }
- 
+@mixin box_shadow_around () {
+    -webkit-box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
 @mixin box_shadow_down () {
     -webkit-box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
