@@ -308,16 +308,11 @@ html {
   transition: .3s;
 }
 
-.text-field .actions :hover {
-  color: white;
-  background-color: #0681FF;
-}
-
 .text-field .actions i {
   height: 40px;
   width: 40px;
-  margin-right: 10px;
   border-radius: 50%;
+  margin-right: 10px;
   background-color: white;
   -webkit-box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.1);
@@ -326,15 +321,27 @@ html {
   padding-top: 12px;
 }
 
+.text-field .actions i:hover {
+  color: white;
+  background: #31ADFF;
+  background: -moz-linear-gradient(top, #31ADFF 0%, #0681FF 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #31ADFF), color-stop(100%, #0681FF));
+  background: -webkit-linear-gradient(top, #31ADFF 0%, #0681FF 100%);
+  background: -o-linear-gradient(top, #31ADFF 0%, #0681FF 100%);
+  background: -ms-linear-gradient(top, #31ADFF 0%, #0681FF 100%);
+  background: linear-gradient(to bottom, #31ADFF 0%, #0681FF 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+}
+
 .text-field .actions .post {
-  background-color: #0681FF;
-  background-image: -moz-linear-gradient(left, #0681FF 0%, #31ADFF 100%);
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #0681FF), color-stop(100%, #31ADFF));
-  background-image: -webkit-linear-gradient(left, #0681FF 0%, #31ADFF 100%);
-  background-image: -o-linear-gradient(left, #0681FF 0%, #31ADFF 100%);
-  background: -ms-linear-gradient(left, #0681FF 0%, #31ADFF 100%);
-  background: linear-gradient(to right, #0681FF 0%, #31ADFF 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to', GradientType=1);
+  background: #31ADFF;
+  background: -moz-linear-gradient(top, #31ADFF 0%, #0681FF 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #31ADFF), color-stop(100%, #0681FF));
+  background: -webkit-linear-gradient(top, #31ADFF 0%, #0681FF 100%);
+  background: -o-linear-gradient(top, #31ADFF 0%, #0681FF 100%);
+  background: -ms-linear-gradient(top, #31ADFF 0%, #0681FF 100%);
+  background: linear-gradient(to bottom, #31ADFF 0%, #0681FF 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
   padding-right: 3px;
   color: white;
 }

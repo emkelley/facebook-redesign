@@ -33,6 +33,16 @@ $transition: all 0.5s;
     background: linear-gradient(to right, $from 0%, $to $stop);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to', GradientType=1);
 }
+@mixin linear-Gradient($top, $bottom){
+    background: $top;
+    background: -moz-linear-gradient(top,  $top 0%, $bottom 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom)); 
+    background: -webkit-linear-gradient(top,  $top 0%,$bottom 100%);
+    background: -o-linear-gradient(top,  $top 0%,$bottom 100%); 
+    background: -ms-linear-gradient(top,  $top 0%,$bottom 100%); 
+    background: linear-gradient(to bottom,  $top 0%,$bottom 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+}
 @mixin box_shadow_around () {
     -webkit-box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.1);

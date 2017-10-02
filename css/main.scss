@@ -258,7 +258,7 @@ html {
   }
 }
 
-//create post section //
+// create post section //
 .text-field {
   width: 670px;
   height: 80px;
@@ -266,7 +266,6 @@ html {
   border-radius: 7px;
   margin-left: 130px;
   margin-top: 30px;
-  
   margin-bottom: 60px;
   img {
     border-radius: 50%;
@@ -286,30 +285,30 @@ html {
     margin-right: 15px;
     color: $greyText;
     transition: .3s;
-    & :hover {
-      color: white;
-      background-color: $blue;
-    }
     i {
     height: 40px;
     width: 40px;
-    margin-right: 10px;
     border-radius: 50%;
+    margin-right: 10px;
     background-color: white;
     @include box_shadow_around();
     text-align: center;
     padding-top: 12px;
-    
+    }
+    i:hover {
+      color: white;
+      @include linear-Gradient($blueLight,
+      $blue);
     }
     .post {
-      @include horizontal-gradient($blue,
-      $blueLight);
+      @include linear-Gradient($blueLight,
+      $blue);
       padding-right: 3px;
       color: white;
     }
   }
 }
-
+// end create post section //
 
 
 
