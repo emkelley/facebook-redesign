@@ -283,6 +283,7 @@ html {
   border-radius: 7px;
   margin-left: 130px;
   margin-top: 30px;
+  margin-bottom: 60px;
 }
 
 .text-field img {
@@ -327,8 +328,64 @@ html {
 
 .text-field .actions .post {
   background-color: #0681FF;
+  background-image: -moz-linear-gradient(left, #0681FF 0%, #31ADFF 100%);
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, #0681FF), color-stop(100%, #31ADFF));
+  background-image: -webkit-linear-gradient(left, #0681FF 0%, #31ADFF 100%);
+  background-image: -o-linear-gradient(left, #0681FF 0%, #31ADFF 100%);
+  background: -ms-linear-gradient(left, #0681FF 0%, #31ADFF 100%);
+  background: linear-gradient(to right, #0681FF 0%, #31ADFF 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to', GradientType=1);
   padding-right: 3px;
   color: white;
+}
+
+.post-img {
+  display: block;
+  width: 670px;
+  height: 250px;
+  background-color: #f7f7f7;
+  border-radius: 7px;
+  margin-left: 130px;
+  margin-top: 30px;
+}
+
+.post-img img {
+  -webkit-box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.post-content {
+  width: 660px;
+  height: 250px;
+  background-color: #f7f7f7;
+  font-size: 1rem;
+  margin-left: 135px;
+  padding-top: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: #444444;
+}
+
+.post-content h1 {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.post-content p {
+  margin-bottom: 15px;
+}
+
+.like-box {
+  height: 50px;
+  border-top: 2px solid #eaeaea;
+  border-bottom: 2px solid #eaeaea;
+  line-height: 45px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #right {
