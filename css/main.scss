@@ -1,18 +1,6 @@
 
-
-/*
-
-@TODO
-
--add min and max width on sidebars
--unfuck the searchbar
-
-
-
-*/
 @import '_var';
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,200,300,400');
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -34,12 +22,9 @@ html {
   width: 1600px;
   height: 768px;
   border: 2px solid slategray;
-
 }
 
 // BEGIN LEFT SIDEBAR //
-
-
 #left {
   float: left;
   background-color: white;
@@ -69,7 +54,7 @@ html {
   img {
     vertical-align: middle;
   }
-  .fa { 
+  .fa {
     margin-top: 3px;
     font-size: .8rem;
     margin-left: 45px;
@@ -134,32 +119,25 @@ html {
   }
 }
 
-
 // END LEFT SIDEBAR //
-
-
-
- 
-
 // BEGIN MIDDLE //
-
 #middle {
   width: 1185px;
   display: inline-block;
   margin: 0 auto;
   height: 100%;
   background-color: white;
-} 
+}
 
 .middle-header {
-  display:flex;
-  flex-direction:row;
+  display: flex;
+  flex-direction: row;
   justify-content: space-around;
   height: 45px;
   padding-top: .45%;
   line-height: 35px;
   font-size: 1rem;
-  @include box-shadow-down();  
+  @include box-shadow-down();
 }
 
 .searchbar {
@@ -187,8 +165,8 @@ html {
   margin-top: 5px;
   padding: 5px 0 5px 10px;
   border-radius: 3px;
-  font-weight: 100;  
-  font-size: 1rem; 
+  font-weight: 100;
+  font-size: 1rem;
   color: $blueDark;
   background-color: $greyUI;
   @include placeholder {
@@ -196,7 +174,7 @@ html {
     font-family: $fontStack;
     font-weight: 300;
   }
-} 
+}
 
 .searchbar--submit,
 .searchbar--select {
@@ -204,13 +182,14 @@ html {
   -webkit-appearance: none;
   appearance: none;
   font-weight: 100;
-  transition:.3s;
+  transition: .3s;
 }
 
 .searchbar--submit:hover {
   background-color: $blue;
   color: white;
 }
+
 .searchbar--submit {
   width: 30px;
   height: 25px;
@@ -234,7 +213,7 @@ html {
     width: 30px;
     margin-right: 5px;
     color: lighten($greyText, 30%);
-    transition: .3s; 
+    transition: .3s;
     font-size: 1.2rem;
     &:hover {
       color: $blue;
@@ -259,7 +238,7 @@ html {
 }
 
 // create post section //
-.text-field {
+.create-post-textbox {
   width: 670px;
   height: 80px;
   background-color: $greyUI;
@@ -286,19 +265,19 @@ html {
     color: $greyText;
     transition: .3s;
     i {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-    background-color: white;
-    @include box_shadow_around();
-    text-align: center;
-    padding-top: 12px;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+      background-color: white;
+      @include box-shadow-down();
+      text-align: center;
+      padding-top: 12px;
+      transition: all .1s ease-in-out;
     }
     i:hover {
-      color: white;
-      @include linear-Gradient($blueLight,
-      $blue);
+      color: $blue;
+      transform: scale(1.1);
     }
     .post {
       @include linear-Gradient($blueLight,
@@ -306,16 +285,15 @@ html {
       padding-right: 3px;
       color: white;
     }
+    .post:hover {
+      color: $blue;
+      @include linear-Gradient(#fff,
+      #fff);
+    }
   }
 }
+
 // end create post section //
-
-
-
-
-
-
-
 // individual post style //
 .post-img {
   display: block;
@@ -326,19 +304,22 @@ html {
   margin-left: 250px;
   margin-top: 30px;
   img {
-    @include box-shadow-down();  
+    @include box-shadow-down();
     border-radius: 5px;
   }
 }
+
 .post-content {
   width: 660px;
-  height: 250px;
+  height: auto;
   background-color: $greyUI;
   font-size: 1rem;
   margin-left: 255px;
   padding-top: 25px;
   padding-left: 40px;
   padding-right: 40px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
   color: darken($greyText, 20%);
   h1 {
     text-transform: uppercase;
@@ -361,12 +342,12 @@ html {
   padding-right: 15px;
   margin: 0 auto;
   span {
-    img{
-    height: 22px;
-    width: 22px;
-    margin-right: -7px;
-    border: 2px solid $greyUI;
-    border-radius: 50%;
+    img {
+      height: 22px;
+      width: 22px;
+      margin-right: -7px;
+      border: 2px solid $greyUI;
+      border-radius: 50%;
     }
   }
 }
@@ -379,6 +360,7 @@ html {
   font-size: .9rem;
   color: $greyText;
 }
+
 .comment-counter {
   position: absolute;
   margin-left: 425px;
@@ -389,48 +371,38 @@ html {
 }
 
 .post-comment-wrapper {
-  height: 50px;
+  min-height: 50px;
   font-weight: 200;
   width: 500px;
 }
 
-#comment { 
-margin-top: 20px;
-background: white;
-border-radius: 20px;
-input {
-  appearance: none;
-  background: transparent;
-  padding: 0px 10px 0px 10px;
-  border: 0;
-  outline: 0;
-  height: 30px;
-  font-size: .9rem;
-  color: $greyText;
-  width: 500px;
-  border-radius: 15px;
-  @include box_shadow_around();
-  &::placeholder {
-    color: lighten($greyText, 30%);
-    font-weight: 100;
-    letter-spacing: 1px;
-    padding-left: 10px;
+#comment {
+  margin-top: 20px;
+  background: white;
+  border-radius: 20px;
+  input {
+    background: transparent;
+    padding: 0px 10px 0px 10px;
+    border: 0;
+    outline: 0;
+    height: 30px;
     font-size: .9rem;
+    color: $greyText;
+    width: 500px;
+    border-radius: 15px;
+    @include box-shadow-down();
+    &::placeholder {
+      color: lighten($greyText, 30%);
+      font-weight: 100;
+      letter-spacing: 1px;
+      padding-left: 10px;
+      font-size: .9rem;
     }
   }
 }
 
-
-
-
-
 // END MIDDLE //
-
-
-
-
 // BEGIN RIGHT SIDEBAR //
-
 #right {
   position: relative;
   float: right;
@@ -438,7 +410,9 @@ input {
   height: 100%;
   background-color: $blue;
   margin: 0 auto;
-  @include scrollbars(.2rem, $blue, $blueDark);
+  @include scrollbars(.2rem,
+  $blue,
+  $blueDark);
 }
 
 .messenger-header {
@@ -473,7 +447,7 @@ input {
   overflow-y: auto;
   height: 90%;
   margin-bottom: -60px!important;
-} 
+}
 
 .messenger-user {
   height: 45px;
@@ -481,7 +455,7 @@ input {
   padding-top: 4px;
   padding-left: 15px;
   line-height: 35px;
-  font-size: 1rem; 
+  font-size: 1rem;
   span {
     color: $white;
     vertical-align: middle;
@@ -539,30 +513,30 @@ input {
   @include box-shadow-up();
 }
 
-#searchbar { 
-margin-top: 10px;
-background: $blueDark;
-border-radius: 20px;
-margin-left: 10%;
-justify-content: center;
-width: 80%;
-text-align: center;
-input {
-  appearance: none;
-  background: transparent;
-  padding: 0px 10px 0px 10px;
-  border: 0;
-  outline: 0;
-  height: 30px;
-  width: 100%;
-  font-size: .9rem;
-  color: #fff;
-  &::placeholder {
-    color: lighten($greyText, 30%);
-    font-weight: 100;
-    letter-spacing: 1px;
-    padding-left: 10px;
+#searchbar {
+  margin-top: 10px;
+  background: $blueDark;
+  border-radius: 20px;
+  margin-left: 10%;
+  justify-content: center;
+  width: 80%;
+  text-align: center;
+  input {
+    appearance: none;
+    background: transparent;
+    padding: 0px 10px 0px 10px;
+    border: 0;
+    outline: 0;
+    height: 30px;
+    width: 100%;
     font-size: .9rem;
+    color: #fff;
+    &::placeholder {
+      color: lighten($greyText, 30%);
+      font-weight: 100;
+      letter-spacing: 1px;
+      padding-left: 10px;
+      font-size: .9rem;
     }
   }
 }

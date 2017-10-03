@@ -1,13 +1,3 @@
-/*
-
-@TODO
-
--add min and max width on sidebars
--unfuck the searchbar
-
-
-
-*/
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,200,300,400");
 * {
   box-sizing: border-box;
@@ -276,7 +266,7 @@ html {
   text-align: center;
 }
 
-.text-field {
+.create-post-textbox {
   width: 670px;
   height: 80px;
   background-color: #f7f7f7;
@@ -286,21 +276,21 @@ html {
   margin-bottom: 60px;
 }
 
-.text-field img {
+.create-post-textbox img {
   border-radius: 50%;
   border: 5px solid white;
   margin-left: -10px;
   margin-top: -8px;
 }
 
-.text-field .status {
+.create-post-textbox .status {
   position: absolute;
   padding-left: 230px;
   margin-top: 30px;
   color: #c4c4c4;
 }
 
-.text-field .actions {
+.create-post-textbox .actions {
   float: right;
   margin-top: 60px;
   margin-right: 15px;
@@ -308,32 +298,26 @@ html {
   transition: .3s;
 }
 
-.text-field .actions i {
+.create-post-textbox .actions i {
   height: 40px;
   width: 40px;
   border-radius: 50%;
   margin-right: 10px;
   background-color: white;
-  -webkit-box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
   text-align: center;
   padding-top: 12px;
+  transition: all .1s ease-in-out;
 }
 
-.text-field .actions i:hover {
-  color: white;
-  background: #31ADFF;
-  background: -moz-linear-gradient(top, #31ADFF 0%, #0681FF 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #31ADFF), color-stop(100%, #0681FF));
-  background: -webkit-linear-gradient(top, #31ADFF 0%, #0681FF 100%);
-  background: -o-linear-gradient(top, #31ADFF 0%, #0681FF 100%);
-  background: -ms-linear-gradient(top, #31ADFF 0%, #0681FF 100%);
-  background: linear-gradient(to bottom, #31ADFF 0%, #0681FF 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+.create-post-textbox .actions i:hover {
+  color: #0681FF;
+  transform: scale(1.1);
 }
 
-.text-field .actions .post {
+.create-post-textbox .actions .post {
   background: #31ADFF;
   background: -moz-linear-gradient(top, #31ADFF 0%, #0681FF 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #31ADFF), color-stop(100%, #0681FF));
@@ -344,6 +328,18 @@ html {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
   padding-right: 3px;
   color: white;
+}
+
+.create-post-textbox .actions .post:hover {
+  color: #0681FF;
+  background: #fff;
+  background: -moz-linear-gradient(top, #fff 0%, #fff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #fff));
+  background: -webkit-linear-gradient(top, #fff 0%, #fff 100%);
+  background: -o-linear-gradient(top, #fff 0%, #fff 100%);
+  background: -ms-linear-gradient(top, #fff 0%, #fff 100%);
+  background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
 }
 
 .post-img {
@@ -365,13 +361,15 @@ html {
 
 .post-content {
   width: 660px;
-  height: 250px;
+  height: auto;
   background-color: #f7f7f7;
   font-size: 1rem;
   margin-left: 255px;
   padding-top: 25px;
   padding-left: 40px;
   padding-right: 40px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
   color: #444444;
 }
 
@@ -424,7 +422,7 @@ html {
 }
 
 .post-comment-wrapper {
-  height: 50px;
+  min-height: 50px;
   font-weight: 200;
   width: 500px;
 }
@@ -436,7 +434,6 @@ html {
 }
 
 #comment input {
-  appearance: none;
   background: transparent;
   padding: 0px 10px 0px 10px;
   border: 0;
@@ -446,9 +443,9 @@ html {
   color: #777777;
   width: 500px;
   border-radius: 15px;
-  -webkit-box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
 #comment input::placeholder {
