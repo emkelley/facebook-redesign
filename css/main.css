@@ -27,7 +27,7 @@ html {
   right: 0;
   bottom: 0;
   left: 0;
-  width: 1366px;
+  width: 1600px;
   height: 768px;
   border: 2px solid slategray;
 }
@@ -134,7 +134,7 @@ html {
 }
 
 #middle {
-  width: 952px;
+  width: 1185px;
   display: inline-block;
   margin: 0 auto;
   height: 100%;
@@ -281,7 +281,7 @@ html {
   height: 80px;
   background-color: #f7f7f7;
   border-radius: 7px;
-  margin-left: 130px;
+  margin-left: 250px;
   margin-top: 30px;
   margin-bottom: 60px;
 }
@@ -352,7 +352,7 @@ html {
   height: 250px;
   background-color: #f7f7f7;
   border-radius: 7px;
-  margin-left: 130px;
+  margin-left: 250px;
   margin-top: 30px;
 }
 
@@ -368,7 +368,7 @@ html {
   height: 250px;
   background-color: #f7f7f7;
   font-size: 1rem;
-  margin-left: 135px;
+  margin-left: 255px;
   padding-top: 25px;
   padding-left: 40px;
   padding-right: 40px;
@@ -384,15 +384,79 @@ html {
 
 .post-content p {
   margin-bottom: 15px;
+  font-weight: 300;
 }
 
 .like-box {
   height: 50px;
   border-top: 2px solid #eaeaea;
   border-bottom: 2px solid #eaeaea;
-  line-height: 45px;
+  line-height: 55px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
+}
+
+.like-box span img {
+  height: 22px;
+  width: 22px;
+  margin-right: -7px;
+  border: 2px solid #f7f7f7;
+  border-radius: 50%;
+}
+
+.reaction-counter {
+  position: absolute;
+  margin-left: 15px;
+  line-height: 50px;
+  margin-top: -3px;
+  font-size: .9rem;
+  color: #777777;
+}
+
+.comment-counter {
+  position: absolute;
+  margin-left: 425px;
+  line-height: 50px;
+  margin-top: -3px;
+  font-size: .9rem;
+  color: #777777;
+}
+
+.post-comment-wrapper {
+  height: 50px;
+  font-weight: 200;
+  width: 500px;
+}
+
+#comment {
+  margin-top: 20px;
+  background: white;
+  border-radius: 20px;
+}
+
+#comment input {
+  appearance: none;
+  background: transparent;
+  padding: 0px 10px 0px 10px;
+  border: 0;
+  outline: 0;
+  height: 30px;
+  font-size: .9rem;
+  color: #777777;
+  width: 500px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+#comment input::placeholder {
+  color: #c4c4c4;
+  font-weight: 100;
+  letter-spacing: 1px;
+  padding-left: 10px;
+  font-size: .9rem;
 }
 
 #right {
