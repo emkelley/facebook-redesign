@@ -24,7 +24,10 @@ html {
   border: 2px solid slategray;
 }
 
+
+
 // BEGIN LEFT SIDEBAR //
+
 #left {
   float: left;
   background-color: white;
@@ -44,7 +47,7 @@ html {
   padding-top: 4px;
   padding-left: 15px;
   line-height: 35px;
-  font-size: 1rem;
+  font-size: 1rem;  
   color: $greyText;
   span {
     margin-left: 15px;
@@ -120,7 +123,11 @@ html {
 }
 
 // END LEFT SIDEBAR //
+
+
+
 // BEGIN MIDDLE //
+
 #middle {
   width: 1185px;
   display: inline-block;
@@ -140,12 +147,12 @@ html {
   @include box-shadow-down();
 }
 
-.searchbar {
+.main-searchbar {
   position: relative;
   margin: 0 auto;
   height: 20px;
   width: 500px;
-  .searchbar--buttons {
+  .search-icon-container {
     width: 40px;
     position: absolute;
     top: 0;
@@ -153,14 +160,14 @@ html {
   }
 }
 
-.searchbar--input,
+.input,
 .searchbar--select,
-.searchbar--submit {
+#search-icon {
   border: none;
   outline: none;
 }
 
-.searchbar--input {
+.input {
   width: 100%;
   margin-top: 5px;
   padding: 5px 0 5px 10px;
@@ -176,7 +183,7 @@ html {
   }
 }
 
-.searchbar--submit,
+#search-icon,
 .searchbar--select {
   cursor: pointer;
   -webkit-appearance: none;
@@ -185,12 +192,12 @@ html {
   transition: .3s;
 }
 
-.searchbar--submit:hover {
+#search-icon:hover {
   background-color: $blue;
   color: white;
 }
 
-.searchbar--submit {
+#search-icon {
   width: 30px;
   height: 25px;
   padding: 0;
@@ -328,25 +335,24 @@ html {
 }
 
 // end create post section //
+
+
+
 // individual post style //
+
 .post-img {
   display: block;
   width: 670px;
   height: 250px;
   background-color: $greyUI;
   border-radius: 7px;
-  margin-left: 250px;
-  margin-top: 30px;
+  margin: 30px 0 0 250px;
    
   img {
     border-radius: 5px;
-    @include post-img-shadow(); 
+    @include post-img-shadow();  
   }
 }
-
-
-
-
 
 .post-content {
   width: 660px;

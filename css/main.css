@@ -144,28 +144,28 @@ html {
   box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
-.searchbar {
+.main-searchbar {
   position: relative;
   margin: 0 auto;
   height: 20px;
   width: 500px;
 }
 
-.searchbar .searchbar--buttons {
+.main-searchbar .search-icon-container {
   width: 40px;
   position: absolute;
   top: 0;
   right: -5px;
 }
 
-.searchbar--input,
+.input,
 .searchbar--select,
-.searchbar--submit {
+#search-icon {
   border: none;
   outline: none;
 }
 
-.searchbar--input {
+.input {
   width: 100%;
   margin-top: 5px;
   padding: 5px 0 5px 10px;
@@ -176,33 +176,31 @@ html {
   background-color: #f7f7f7;
 }
 
-.searchbar--input::-webkit-input-placeholder {
+.input::-webkit-input-placeholder {
   color: #c4c4c4;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
 }
 
-.searchbar--input:-moz-placeholder {
-  /* Firefox 18- */
+.input:-moz-placeholder {
   color: #c4c4c4;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
 }
 
-.searchbar--input::-moz-placeholder {
-  /* Firefox 19+ */
+.input::-moz-placeholder {
   color: #c4c4c4;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
 }
 
-.searchbar--input:-ms-input-placeholder {
+.input:-ms-input-placeholder {
   color: #c4c4c4;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
 }
 
-.searchbar--submit,
+#search-icon,
 .searchbar--select {
   cursor: pointer;
   -webkit-appearance: none;
@@ -211,12 +209,12 @@ html {
   transition: .3s;
 }
 
-.searchbar--submit:hover {
+#search-icon:hover {
   background-color: #0681FF;
   color: white;
 }
 
-.searchbar--submit {
+#search-icon {
   width: 30px;
   height: 25px;
   padding: 0;
@@ -399,8 +397,7 @@ html {
   height: 250px;
   background-color: #f7f7f7;
   border-radius: 7px;
-  margin-left: 250px;
-  margin-top: 30px;
+  margin: 30px 0 0 250px;
 }
 
 .post-img img {

@@ -3,7 +3,7 @@
 
 $black: black;
 $white: white;
-$textDark: #212124;
+$textDark: #212121;
 $bg: #DFEFFC;
 $greyText: #777777;
 $greyUI: lighten( $greyText, 50%);
@@ -12,15 +12,8 @@ $blueLight: #31ADFF;
 $blue: #0681FF;
 $blueDark: darken(desaturate($blue, 10), 5);
 $greenActive: #00FFB0;
-$color-dark: black;
-$color: #974fe4;
-
 $fontStack: 'Source Sans Pro', sans-serif;
-$font-size: 30px;
-$icon-size: 30px;
-$width-input: 500px;
-$border-radius: 10px;
-$transition: all 0.5s;
+
 // MIXINS //
 
 @mixin horizontal-gradient($from, $to, $stop: 100%) {
@@ -33,6 +26,7 @@ $transition: all 0.5s;
     background: linear-gradient(to right, $from 0%, $to $stop);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$from', endColorstr='$to', GradientType=1);
 }
+
 @mixin linear-Gradient($top, $bottom){
     background: $top;
     background: -moz-linear-gradient(top,  $top 0%, $bottom 100%);
@@ -43,38 +37,39 @@ $transition: all 0.5s;
     background: linear-gradient(to bottom,  $top 0%,$bottom 100%); 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
 }
+
 @mixin post-img-shadow () {
-    -webkit-box-shadow: 0 20px 5px 0px rgba(0, 0, 0, 99);
-	-moz-box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 99);
-	box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 99);
+    -webkit-box-shadow: 0 20px 5px 0px rgba(0, 0, 0, 100);
+	-moz-box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 100);
+	box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 100);
 }
+
 @mixin box_shadow_around () {
-    -webkit-box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.1);
-	-moz-box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.1);
-	box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0px 5px 0px rgba(0, 0, 0, .1);
+	-moz-box-shadow: 0 0px 5px 0px rgba(0, 0, 0, .1);
+	box-shadow: 0 0px 5px 0px rgba(0, 0, 0, .1);
 }
+
 @mixin box_shadow_down () {
-    -webkit-box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
-	-moz-box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
-	box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 2px 5px 0px rgba(0, 0, 0, .1);
+	-moz-box-shadow: 0 2px 5px 0px rgba(0, 0, 0, .1);
+	box-shadow: 0 2px 5px 0px rgba(0, 0, 0, .1);
 }
+
 @mixin box_shadow_up () {
-    -webkit-box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.1);
-	-moz-box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.1);
-	box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 -1px 20px rgba(0, 0, 0, .1);
+	-moz-box-shadow: 0 -1px 20px rgba(0, 0, 0, .1);
+	box-shadow: 0 -1px 20px rgba(0, 0, 0, .1);
 }
 
 @mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
-  // For Google Chrome
   ::-webkit-scrollbar {
       width:  $size;
       height: $size;
   }
-
   ::-webkit-scrollbar-thumb {
       background: $foreground-color;
   }
-
   ::-webkit-scrollbar-track {
       background: $background-color;
   }
@@ -84,15 +79,12 @@ $transition: all 0.5s;
   &::-webkit-input-placeholder {
       @content;
   }
-
-  &:-moz-placeholder { /* Firefox 18- */
+  &:-moz-placeholder { 
       @content;
   }
-
-  &::-moz-placeholder {  /* Firefox 19+ */
+  &::-moz-placeholder {  
       @content;
   }
-
   &:-ms-input-placeholder {
       @content;
   }
