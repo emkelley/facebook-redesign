@@ -290,7 +290,7 @@ html {
   color: #c4c4c4;
 }
 
-.create-post-textbox .actions {
+.actions {
   float: right;
   margin-top: 60px;
   margin-right: 15px;
@@ -298,7 +298,7 @@ html {
   transition: .3s;
 }
 
-.create-post-textbox .actions i {
+.actions i {
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -312,12 +312,12 @@ html {
   transition: all .1s ease-in-out;
 }
 
-.create-post-textbox .actions i:hover {
+.actions i:hover {
   color: #0681FF;
   transform: scale(1.1);
 }
 
-.create-post-textbox .actions .post {
+.actions .post {
   background: #31ADFF;
   background: -moz-linear-gradient(top, #31ADFF 0%, #0681FF 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #31ADFF), color-stop(100%, #0681FF));
@@ -330,7 +330,58 @@ html {
   color: white;
 }
 
-.create-post-textbox .actions .post:hover {
+.actions .post:hover {
+  color: #0681FF;
+  background: #fff;
+  background: -moz-linear-gradient(top, #fff 0%, #fff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #fff));
+  background: -webkit-linear-gradient(top, #fff 0%, #fff 100%);
+  background: -o-linear-gradient(top, #fff 0%, #fff 100%);
+  background: -ms-linear-gradient(top, #fff 0%, #fff 100%);
+  background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+}
+
+.like-action {
+  float: right;
+  margin-top: 16px;
+  margin-right: -30px;
+  color: #777777;
+  transition: .3s;
+}
+
+.like-action i {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: white;
+  -webkit-box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding-top: 10px;
+  transition: all .1s ease-in-out;
+}
+
+.like-action i:hover {
+  color: #0681FF;
+  transform: scale(1.1);
+}
+
+.like-action .post {
+  background: #31ADFF;
+  background: -moz-linear-gradient(top, #31ADFF 0%, #0681FF 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #31ADFF), color-stop(100%, #0681FF));
+  background: -webkit-linear-gradient(top, #31ADFF 0%, #0681FF 100%);
+  background: -o-linear-gradient(top, #31ADFF 0%, #0681FF 100%);
+  background: -ms-linear-gradient(top, #31ADFF 0%, #0681FF 100%);
+  background: linear-gradient(to bottom, #31ADFF 0%, #0681FF 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+  color: white;
+}
+
+.like-action .post:hover {
   color: #0681FF;
   background: #fff;
   background: -moz-linear-gradient(top, #fff 0%, #fff 100%);
@@ -353,10 +404,10 @@ html {
 }
 
 .post-img img {
-  -webkit-box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 2px 5px 0px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+  -webkit-box-shadow: 0 20px 5px 0px black;
+  -moz-box-shadow: 0 2px 5px 0px black;
+  box-shadow: 0 2px 5px 0px black;
 }
 
 .post-content {
