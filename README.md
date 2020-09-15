@@ -1,2 +1,3 @@
-# facebook-redesign
-CSS Challenge Project
+# CSS Practice 
+
+Facebook redesign for css practice
